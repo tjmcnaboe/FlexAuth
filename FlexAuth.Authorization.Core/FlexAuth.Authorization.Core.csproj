@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	  <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Enums.NET" Version="4.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Authorization" Version="6.0.5" />
+	</ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FlexAuth.Interfaces\FlexAuth.Interfaces.csproj" />
+    <ProjectReference Include="..\FlexAuth\FlexAuth.csproj" />
+  </ItemGroup>
+
+</Project>
