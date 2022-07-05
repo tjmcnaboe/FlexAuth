@@ -73,7 +73,7 @@ namespace DemoNetCoreMvc
         public static List<string> Roles = new List<string>() { GlobalAdmin, Owner, Admin, Developer, AccountManager, Member };
     }
 
-    public class RootFlexPolicy : IFlexPolicy//<RootPermissions>
+    public class RootFlexPolicy : IFlexPolicy
     {
         public string GetPolicyPrefix()
         {
@@ -100,7 +100,7 @@ namespace DemoNetCoreMvc
     }
 
 
-    public class RoleProviderRequestContext : IRequestRoleProvider
+    public class StaticTestingRoleProvider : IRequestRoleProvider
     {
         public List<string> GetRoles()
         {

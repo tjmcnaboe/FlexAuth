@@ -2,9 +2,13 @@
 
 Flex Auth is a library designed to decouple your authorization code from the underlying claims and create strongly typed permission policies based on user roles.   You can implement multiple permission sets each with their own corresponding policy structure that are anchored to a common set of user roles as defined by your application.  This allows you to use a simple unifying role structure while allowing underlying services to implement their own authorization/permissions structures independent of one another and of varying complexity.  These permission sets can then be applied via enum based authorization attributes that provide strongly typed access to the underlying roles/permissions.
 
+Turn on preview features to enable Genric <T> Attributes
 Implement your roles and permissions
 
 ```csharp
+
+	  <LangVersion>preview</LangVersion>
+	  <EnablePreviewFeatures>true</EnablePreviewFeatures>
 
     public class RootRoleProvider : IGenericPermissionRoleProvider<RootPermissions>//IPermissionRoleProvider<Permissions>
     {

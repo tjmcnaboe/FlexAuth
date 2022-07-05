@@ -18,8 +18,8 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddScoped<RoleProviderRequestContext>();
-builder.Services.AddScoped<IRequestRoleProvider>(provider => provider.GetRequiredService<RoleProviderRequestContext>());
+builder.Services.AddScoped<StaticTestingRoleProvider>();
+builder.Services.AddScoped<IRequestRoleProvider>(provider => provider.GetRequiredService<StaticTestingRoleProvider>());
 
 
 builder.Services.AddSingleton<IFlexPolicy, RootFlexPolicy>();
