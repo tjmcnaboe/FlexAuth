@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlexAuth.Authorization.Core
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlexAuth.Interfaces", "FlexAuth.Interfaces\FlexAuth.Interfaces.csproj", "{011EA227-04D5-46EA-A863-7902ED2AB7FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoNetCoreMvc", "DemoNetCoreMvc\DemoNetCoreMvc.csproj", "{6557B71A-A6F7-4636-9AE9-FA2238F7B5E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{011EA227-04D5-46EA-A863-7902ED2AB7FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{011EA227-04D5-46EA-A863-7902ED2AB7FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{011EA227-04D5-46EA-A863-7902ED2AB7FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6557B71A-A6F7-4636-9AE9-FA2238F7B5E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6557B71A-A6F7-4636-9AE9-FA2238F7B5E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6557B71A-A6F7-4636-9AE9-FA2238F7B5E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6557B71A-A6F7-4636-9AE9-FA2238F7B5E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
